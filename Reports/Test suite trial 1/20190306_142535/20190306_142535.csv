@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Test suite trial 1,Firefox 65.0,,2019-03-06 14:25:38,2019-03-06 14:25:52,14.464s,PASSED
+,,,,,,
+Test Cases/Trial1,Firefox 65.0,,2019-03-06 14:25:38,2019-03-06 14:25:52,14.142s,PASSED
+"openBrowser(""https://www.tg9demo.com/#/home"")",Firefox 65.0,,2019-03-06 14:25:39,2019-03-06 14:25:45,6.413s,PASSED
+"click(findTestObject(""Page_TG/pop_up_dialog_delete""))",Firefox 65.0,,2019-03-06 14:25:45,2019-03-06 14:25:45,0.384s,PASSED
+maximizeWindow(),Firefox 65.0,,2019-03-06 14:25:45,2019-03-06 14:25:45,0.035s,PASSED
+"waitForElementVisible(findTestObject(""Page_TG/input_login_password""), 0)",Firefox 65.0,,2019-03-06 14:25:45,2019-03-06 14:25:46,0.183s,PASSED
+"setText(findTestObject(""Page_TG/input_login_username""), ""Test 1234"")",Firefox 65.0,,2019-03-06 14:25:46,2019-03-06 14:25:46,0.165s,PASSED
+"setText(findTestObject(""Page_TG/input_login_password""), ""Password 5678"")",Firefox 65.0,,2019-03-06 14:25:46,2019-03-06 14:25:46,0.175s,PASSED
+"click(findTestObject(""Page_TG/login_btn""))",Firefox 65.0,,2019-03-06 14:25:46,2019-03-06 14:25:46,0.342s,PASSED
+"waitForElementPresent(findTestObject(""Page_TG/p_""), 10)",Firefox 65.0,,2019-03-06 14:25:46,2019-03-06 14:25:46,0.085s,PASSED
+delay(5),Firefox 65.0,,2019-03-06 14:25:46,2019-03-06 14:25:51,5.035s,PASSED
+closeBrowser(),Firefox 65.0,,2019-03-06 14:25:51,2019-03-06 14:25:52,0.902s,PASSED
