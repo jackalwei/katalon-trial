@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2019-03-07T19:15:54</date>
+  <millis>1551957354536</millis>
+  <sequence>0</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startSuite</method>
+  <thread>1</thread>
+  <message>Start Test Suite : Test Suites/Test suite trial 1</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="name">Test suite trial 1</property>
+  <property name="description"></property>
+  <property name="id">Test Suites/Test suite trial 1</property>
+</record>
+<record>
+  <date>2019-03-07T19:15:54</date>
+  <millis>1551957354548</millis>
+  <sequence>1</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostName = jacka - LAPTOP-KFFRJLG9</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostName">jacka - LAPTOP-KFFRJLG9</property>
+</record>
+<record>
+  <date>2019-03-07T19:15:54</date>
+  <millis>1551957354548</millis>
+  <sequence>2</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>os = Windows 10 64bit</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="os">Windows 10 64bit</property>
+</record>
+<record>
+  <date>2019-03-07T19:15:54</date>
+  <millis>1551957354548</millis>
+  <sequence>3</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>hostAddress = 169.254.147.141</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostAddress">169.254.147.141</property>
+</record>
+<record>
+  <date>2019-03-07T19:15:54</date>
+  <millis>1551957354549</millis>
+  <sequence>4</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>katalonVersion = 6.0.5.10</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="katalonVersion">6.0.5.10</property>
+</record>
+<record>
+  <date>2019-03-07T19:15:54</date>
+  <millis>1551957354768</millis>
+  <sequence>5</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Trial 2</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Trial 2</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Trial 2</property>
+  <property name="source">C:\\Users\\jacka\\git\\katalon-trial\\Test Cases\\Trial 2.tc</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2019-03-07T19:15:55</date>
+  <millis>1551957355128</millis>
+  <sequence>8</sequence>
+  <logger>com.kms.katalon.core.logging.XmlKeywordLogger</logger>
+  <level>ERROR</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Trial 2 FAILED.\nReason:\norg.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:\r\nfile:/C:/Users/jacka/git/katalon-trial/Scripts/Trial%202/Script1551945278170.groovy: 20: unable to resolve class ChromeOptions \n @ line 20, column 15.\r\n   ChromeOptions chromeOptions = new ChromeOptions(); chromeOptions.setExperimentalOption(\&amp;quot;mobileEmulation\&amp;quot;, mobileEmulation);\r\n                 ^\r\n\r\nfile:/C:/Users/jacka/git/katalon-trial/Scripts/Trial%202/Script1551945278170.groovy: 20: unable to resolve class ChromeOptions \n @ line 20, column 31.\r\n   ChromeOptions chromeOptions = new ChromeOptions(); chromeOptions.setExperimentalOption(\&amp;quot;mobileEmulation\&amp;quot;, mobileEmulation);\r\n                                 ^\r\n\r\nfile:/C:/Users/jacka/git/katalon-trial/Scripts/Trial%202/Script1551945278170.groovy: 22: unable to resolve class WebDriver \n @ line 22, column 11.\r\n   WebDriver driver = new ChromeDriver(chromeOptions);\r\n             ^\r\n\r\nfile:/C:/Users/jacka/git/katalon-trial/Scripts/Trial%202/Script1551945278170.groovy: 22: unable to resolve class ChromeDriver \n @ line 22, column 20.\r\n   WebDriver driver = new ChromeDriver(chromeOptions);\r\n                      ^\r\n\r\n4 errors\r\n\r\n\tat com.kms.katalon.core.main.ScriptEngine.getScript(ScriptEngine.java:199)\r\n\tat com.kms.katalon.core.main.ScriptEngine.run(ScriptEngine.java:194)\r\n\tat com.kms.katalon.core.main.ScriptEngine.runScriptAsRawText(ScriptEngine.java:119)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.runScript(TestCaseExecutor.java:331)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.doExecute(TestCaseExecutor.java:322)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.processExecutionPhase(TestCaseExecutor.java:301)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.accessMainPhase(TestCaseExecutor.java:293)\r\n\tat com.kms.katalon.core.main.TestCaseExecutor.execute(TestCaseExecutor.java:227)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestCaseMainPhase(TestSuiteExecutor.java:129)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.accessTestSuiteMainPhase(TestSuiteExecutor.java:112)\r\n\tat com.kms.katalon.core.main.TestSuiteExecutor.execute(TestSuiteExecutor.java:81)\r\n\tat com.kms.katalon.core.main.TestCaseMain.startTestSuite(TestCaseMain.java:157)\r\n\tat com.kms.katalon.core.main.TestCaseMain$startTestSuite$0.call(Unknown Source)\r\n\tat TempTestSuite1551957353092.run(TempTestSuite1551957353092.groovy:35)\r\n</message>
+  <exception>
+    <message>org.codehaus.groovy.control.MultipleCompilationErrorsException: startup failed:
+file:/C:/Users/jacka/git/katalon-trial/Scripts/Trial%202/Script1551945278170.groovy: 20: unable to resolve class ChromeOptions 
+ @ line 20, column 15.
+   ChromeOptions chromeOptions = new ChromeOptions(); chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
+                 ^
+
+file:/C:/Users/jacka/git/katalon-trial/Scripts/Trial%202/Script1551945278170.groovy: 20: unable to resolve class ChromeOptions 
+ @ line 20, column 31.
+   ChromeOptions chromeOptions = new ChromeOptions(); chromeOptions.setExperimentalOption("mobileEmulation", mobileEmulation);
+                                 ^
+
+file:/C:/Users/jacka/git/katalon-trial/Scripts/Trial%202/Script1551945278170.groovy: 22: unable to resolve class WebDriver 
+ @ line 22, column 11.
+   WebDriver driver = new ChromeDriver(chromeOptions);
+             ^
+
+file:/C:/Users/jacka/git/katalon-trial/Scripts/Trial%202/Script1551945278170.groovy: 22: unable to resolve class ChromeDriver 
+ @ line 22, column 20.
+   WebDriver driver = new ChromeDriver(chromeOptions);
+                      ^
+
+4 errors
+</message>
+    <frame>
+      <class>com.kms.katalon.core.main.ScriptEngine</class>
+      <method>getScript</method>
+      <line>199</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.ScriptEngine</class>
+      <method>run</method>
+      <line>194</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.ScriptEngine</class>
+      <method>runScriptAsRawText</method>
+      <line>119</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseExecutor</class>
+      <method>runScript</method>
+      <line>331</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseExecutor</class>
+      <method>doExecute</method>
+      <line>322</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseExecutor</class>
+      <method>processExecutionPhase</method>
+      <line>301</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseExecutor</class>
+      <method>accessMainPhase</method>
+      <line>293</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseExecutor</class>
+      <method>execute</method>
+      <line>227</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestSuiteExecutor</class>
+      <method>accessTestCaseMainPhase</method>
+      <line>129</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestSuiteExecutor</class>
+      <method>accessTestSuiteMainPhase</method>
+      <line>112</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestSuiteExecutor</class>
+      <method>execute</method>
+      <line>81</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseMain</class>
+      <method>startTestSuite</method>
+      <line>157</line>
+    </frame>
+    <frame>
+      <class>com.kms.katalon.core.main.TestCaseMain$startTestSuite$0</class>
+      <method>call</method>
+    </frame>
+    <frame>
+      <class>TempTestSuite1551957353092</class>
+      <method>run</method>
+      <line>35</line>
+    </frame>
+  </exception>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-03-07T19:15:55</date>
+  <millis>1551957355132</millis>
+  <sequence>9</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Trial 2</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2019-03-07T19:15:55</date>
+  <millis>1551957355226</millis>
+  <sequence>10</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.XmlKeywordLogger</class>
+  <method>endSuite</method>
+  <thread>1</thread>
+  <message>End Test Suite : Test Suites/Test suite trial 1</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+</log>

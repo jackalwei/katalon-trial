@@ -1,0 +1,5 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Test suite trial 1,,,2019-03-07 19:18:49,2019-03-07 19:18:53,3.480s,FAILED
+,,,,,,
+Test Cases/Trial1,,,2019-03-07 19:18:49,2019-03-07 19:18:52,3.236s,FAILED
+"openBrowser(""https://www.tg9demo.com/#/home"")",,,2019-03-07 19:18:50,2019-03-07 19:18:52,2.885s,FAILED

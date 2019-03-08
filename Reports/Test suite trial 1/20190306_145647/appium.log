@@ -1,0 +1,691 @@
+[35m[Appium][39m Welcome to Appium v1.8.1
+[35m[Appium][39m Non-default server args:
+[35m[Appium][39m   port: 65072
+[35m[Appium][39m   chromeDriverPort: 65073
+[35m[Appium][39m   tmpDir: C:\Users\jacka\AppData\Local\Temp\\Katalon\Appium\Temp1551855411041
+[35m[Appium][39m Appium REST http interface listener started on 0.0.0.0:65072
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.getStatus() with args: []
+[debug] [35m[MJSONWP][39m Responding to client with driver.getStatus() result: {"build":{"version":"1.8.1","revision":null}}
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m8 ms - 83[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session[39m
+[35m[HTTP][39m [90m{"desiredCapabilities":{"browserName":"Chrome","deviceName":"htc Nexus 9 (Android 7.1.1)","newCommandTimeout":1800,"platform":"ANDROID","platformName":"Android","udid":"HT524JT00708"},"capabilities":{"desiredCapabilities":{"browserName":"Chrome","deviceName":"htc Nexus 9 (Android 7.1.1)","newCommandTimeout":1800,"platform":"ANDROID","platformName":"Android","udid":"HT524JT00708"},"firstMatch":[{"browserName":"Chrome","platformName":"android"}]}}[39m
+[debug] [35m[MJSONWP][39m Calling AppiumDriver.createSession() with args: [{"browserName":"Chrome","deviceName":"htc Nexus 9 (Android 7.1.1)","newCommandTimeout":1800,"platform":"ANDROID","platformName":"Android","udid":"HT524JT00708"},null,{"desiredCapabilities":{"browserName":"Chrome","deviceName":"htc Nexus 9 (Android 7.1.1)","newCommandTimeout":1800,"platform":"ANDROID","platformName":"Android","udid":"HT524JT00708"},"firstMatch":[{"browserName":"Chrome","platformName":"android"}]}]
+[debug] [35m[BaseDriver][39m Event 'newSessionRequested' logged at 1551855416928 (14:56:56 GMT+0800 (GMT+08:00))
+[35m[Appium][39m Could not parse W3C capabilities: 'deviceName' can't be blank. Falling back to JSONWP protocol.
+[35m[Appium][39m The following capabilities were provided in the JSONWP desired capabilities that are missing in W3C capabilities: ["browserName","deviceName","newCommandTimeout","platform","platformName","udid"]. Falling back to JSONWP protocol.
+[35m[Appium][39m Creating new AndroidDriver (v2.7.0) session
+[35m[Appium][39m Capabilities:
+[35m[Appium][39m   browserName: Chrome
+[35m[Appium][39m   deviceName: htc Nexus 9 (Android 7.1.1)
+[35m[Appium][39m   newCommandTimeout: 1800
+[35m[Appium][39m   platform: ANDROID
+[35m[Appium][39m   platformName: Android
+[35m[Appium][39m   udid: HT524JT00708
+[debug] [35m[BaseDriver][39m Creating session with MJSONWP desired capabilities: {"browserName":"Chrome","de...
+[35m[BaseDriver][39m The following capabilities were provided, but are not recognized by appium: platform.
+[35m[BaseDriver][39m Session created with session id: abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[debug] [35m[AndroidDriver][39m Getting Java version
+[35m[AndroidDriver][39m Java version is: 1.8.0_181
+[35m[AndroidDriver][39m We're going to run a Chrome-based session
+[35m[AndroidDriver][39m Chrome-type package and activity are com.android.chrome and com.google.android.apps.chrome.Main
+[35m[ADB][39m Checking whether adb is present
+[35m[ADB][39m Found 1 'build-tools' folders under 'C:\Users\jacka\.katalon\tools\android_sdk' (newest first):
+[35m[ADB][39m     C:/Users/jacka/.katalon/tools/android_sdk/build-tools/28.0.3
+[35m[ADB][39m Using adb.exe from C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe
+[35m[AndroidDriver][39m Retrieving device list
+[debug] [35m[ADB][39m Trying to find a connected android device
+[debug] [35m[ADB][39m Getting connected devices...
+[debug] [35m[ADB][39m 1 device(s) connected
+[35m[AndroidDriver][39m Using device: HT524JT00708
+[debug] [35m[ADB][39m Setting device id to HT524JT00708
+[35m[AndroidDriver][39m App file was not listed, instead we're going to run com.android.chrome directly on the device
+[debug] [35m[AndroidDriver][39m Checking whether package is present on the device
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell pm list packages com.android.chrome'
+[35m[AndroidDriver][39m Starting Android session
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 wait-for-device'
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell echo ping'
+[debug] [35m[AndroidDriver][39m Pushing settings apk to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.settings
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell pm list packages io.appium.settings'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.settings'
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell dumpsys package io.appium.settings'
+[35m[ADB][39m Checking whether aapt is present
+[35m[ADB][39m Using aapt.exe from C:\Users\jacka\.katalon\tools\android_sdk\build-tools\28.0.3\aapt.exe
+[debug] [35m[ADB][39m The installed 'io.appium.settings' package is older than 'C:\Users\jacka\AppData\Roaming\npm\node_modules\appium\node_modules\io.appium.settings\app\build\outputs\apk\settings_apk-debug.apk' (3 < 5 or '2.1.0' < '2.3.0')'. Executing upgrade
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell getprop ro.build.version.sdk'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.sdk': 25
+[debug] [35m[ADB][39m Device API level: 25
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 install -r -g C\:\\Users\\jacka\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\io.appium.settings\\app\\build\\outputs\\apk\\settings_apk-debug.apk'
+[debug] [35m[ADB][39m Install command stdout: Success
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell ps'
+[debug] [35m[ADB][39m Device API level: 25
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell am start -W -n io.appium.settings/.Settings -a android.intent.action.MAIN -c android.intent.category.LAUNCHER -f 0x10200000'
+[debug] [35m[ADB][39m Device API level: 25
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell appops set io.appium.settings android\:mock_location allow'
+[35m[AndroidDriver][39m setDeviceLanguageCountry requires language or country.
+[35m[AndroidDriver][39m Got language: 'null' and country: 'null'
+[debug] [35m[Logcat][39m Starting logcat capture
+[debug] [35m[AndroidDriver][39m Pushing unlock helper app to device...
+[debug] [35m[ADB][39m Getting install status for io.appium.unlock
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell pm list packages io.appium.unlock'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Getting package info for 'io.appium.unlock'
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell dumpsys package io.appium.unlock'
+[debug] [35m[ADB][39m The installed 'io.appium.unlock' package is older than 'C:\Users\jacka\AppData\Roaming\npm\node_modules\appium\node_modules\appium-unlock\bin\unlock_apk-debug.apk' (1 < 2 or '1.0.0' < '2.0.0')'. Executing upgrade
+[debug] [35m[ADB][39m Device API level: 25
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 install -r -g C\:\\Users\\jacka\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk'
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 install -r -g C\:\\Users\\jacka\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk'
+[35m[ADB][39m Cannot upgrade 'io.appium.unlock' because of 'Error executing adbExec. Original error: 'Command 'C\:\\Users\\jacka\\.katalon\\tools\\android_sdk\\platform-tools\\adb.exe -P 5037 -s HT524JT00708 install -r -g C\:\\Users\\jacka\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk' exited with code 1'; Stderr: 'adb: failed to install C:\Users\jacka\AppData\Roaming\npm\node_modules\appium\node_modules\appium-unlock\bin\unlock_apk-debug.apk: Failure [INSTALL_FAILED_UPDATE_INCOMPATIBLE: Package io.appium.unlock signatures do not match the previously installed version; ignoring!]'; Code: '1''. Trying full reinstall
+[debug] [35m[ADB][39m Uninstalling io.appium.unlock
+[debug] [35m[ADB][39m Getting install status for io.appium.unlock
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell pm list packages io.appium.unlock'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell am force-stop io.appium.unlock'
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 uninstall io.appium.unlock'
+[debug] [35m[ADB][39m 'adb uninstall io.appium.unlock' command output: Success
+[35m[ADB][39m io.appium.unlock was successfully uninstalled
+[debug] [35m[ADB][39m Device API level: 25
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 install -g C\:\\Users\\jacka\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-unlock\\bin\\unlock_apk-debug.apk'
+[debug] [35m[ADB][39m Install command stdout: Success
+[35m[ADB][39m Getting device platform version
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell getprop ro.build.version.release'
+[debug] [35m[ADB][39m Current device property 'ro.build.version.release': 7.1.1
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell wm size'
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell getprop ro.product.model'
+[debug] [35m[ADB][39m Current device property 'ro.product.model': Nexus 9
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell getprop ro.product.manufacturer'
+[debug] [35m[ADB][39m Current device property 'ro.product.manufacturer': htc
+[35m[AndroidDriver][39m No app sent in, not parsing package/activity
+[debug] [35m[AndroidDriver][39m No app capability. Assuming it is already on the device
+[debug] [35m[ADB][39m Getting install status for com.android.chrome
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell pm list packages com.android.chrome'
+[debug] [35m[ADB][39m App is installed
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell am force-stop com.android.chrome'
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell pm clear com.android.chrome'
+[debug] [35m[AndroidDriver][39m Performed fast reset on the installed 'com.android.chrome' application (stop and clear)
+[debug] [35m[AndroidBootstrap][39m Watching for bootstrap disconnect
+[debug] [35m[ADB][39m Forwarding system: 4724 to device: 4724
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 forward tcp\:4724 tcp\:4724'
+[debug] [35m[UiAutomator][39m Starting UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'starting'
+[debug] [35m[UiAutomator][39m Parsing uiautomator jar
+[debug] [35m[UiAutomator][39m Found jar name: 'AppiumBootstrap.jar'
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 push C\:\\Users\\jacka\\AppData\\Roaming\\npm\\node_modules\\appium\\node_modules\\appium-android-bootstrap\\bootstrap\\bin\\AppiumBootstrap.jar /data/local/tmp/'
+[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting all processes with uiautomator
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell ps'
+[35m[ADB][39m No uiautomator process found to kill, continuing...
+[debug] [35m[UiAutomator][39m Starting UIAutomator
+[debug] [35m[ADB][39m Creating ADB subprocess with args: ["-P",5037,"-s","HT524JT00708","shell","uiautomator","runtest","AppiumBootstrap.jar","-c","io.appium.android.bootstrap.Bootstrap","-e","pkg","com.android.chrome","-e","disableAndroidWatchers",false,"-e","acceptSslCerts",false]
+[debug] [35m[UiAutomator][39m Moving to state 'online'
+[35m[AndroidBootstrap][39m Android bootstrap socket is now connected
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell dumpsys window'
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] json loading complete.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Registered crash watchers.
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Client connected
+[35m[AndroidDriver][39m Screen already unlocked, doing nothing
+[35m[AndroidDriver][39m Starting a chrome-based browser session
+[debug] [35m[Chromedriver][39m Changed state to 'starting'
+[debug] [35m[Chromedriver][39m The following Chromedriver executables were found:
+[debug] [35m[Chromedriver][39m     C:/Users/jacka/AppData/Roaming/npm/node_modules/appium/node_modules/appium-chromedriver/chromedriver/win/chromedriver.exe (minimum Chrome version '65.0.3325')
+[debug] [35m[ADB][39m Getting package info for 'com.android.chrome'
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell dumpsys package com.android.chrome'
+[debug] [35m[Chromedriver][39m Found Chrome bundle 'com.android.chrome' version '70.0.3538'
+[debug] [35m[Chromedriver][39m Found 1 Chromedriver executable capable of automating Chrome '70.0.3538'.
+[debug] [35m[Chromedriver][39m Choosing the most recent, 'C:/Users/jacka/AppData/Roaming/npm/node_modules/appium/node_modules/appium-chromedriver/chromedriver/win/chromedriver.exe'.
+[debug] [35m[Chromedriver][39m If a specific version is required, specify it with the `chromedriverExecutable`desired capability.
+[35m[Chromedriver][39m Set chromedriver binary as: C:/Users/jacka/AppData/Roaming/npm/node_modules/appium/node_modules/appium-chromedriver/chromedriver/win/chromedriver.exe
+[debug] [35m[Chromedriver][39m Killing any old chromedrivers, running: FOR /F "usebackq tokens=5" %a in (`netstat -nao ^| findstr /R /C:"65073 "`) do (FOR /F "usebackq" %b in (`TASKLIST /FI "PID eq %a" ^| findstr /I chromedriver.exe`) do (IF NOT %b=="" TASKKILL /F /PID %a))
+[35m[Chromedriver][39m No old chromedrivers seemed to exist
+[debug] [35m[Chromedriver][39m Cleaning any old adb forwarded port socket connections
+[debug] [35m[ADB][39m List forwarding ports
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 forward --list'
+[35m[Chromedriver][39m Spawning chromedriver with: C:/Users/jacka/AppData/Roaming/npm/node_modules/appium/node_modules/appium-chromedriver/chromedriver/win/chromedriver.exe --url-base=wd/hub --port=65073 --adb-port=5037 --verbose
+[debug] [35m[Chromedriver][39m Chromedriver version: '2.38.552522'
+[debug] [35m[JSONWP Proxy][39m Proxying [GET /status] to [GET http://127.0.0.1:65073/wd/hub/status] with no body
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"\",\"status\":0,\"value\":{\"build\":{\"version\":\"alpha\"},\"os\":{\"arch\":\"x86_64\",\"name\":\"Windows NT\",\"version\":\"10.0.17134\"}}}"
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /session] to [POST http://127.0.0.1:65073/wd/hub/session] with body: {"desiredCapabilities":{"chromeOptions":{"androidPackage":"com.android.chrome","androidDeviceSerial":"HT524JT00708"}}}
+[debug] [35m[Chromedriver][39m Webview version: 'Chrome/70.0.3538.80'
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":{"acceptInsecureCerts":false,"acceptSslCerts":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"browserName":"chrome","chrome":{"chromedriverVersion":"2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb)"},"cssSelectorsEnabled":true,"databaseEnabled":false,"handlesAlerts":true,"hasTouchScreen":true,"javascriptEnabled":true,"locationContextEnabled":true,"mobileEmulationEnabled":false,"nativeEvents":true,"pageLoadStrategy":"normal","platform":"ANDROID","rotatable":false,"setWindowRect":false,"takesHeapSnapshot":true,"takesScreenshot":true,"unexpectedAlertBehaviour":"","version":"70.0.3538.80","webStorageEnabled":true}}
+[debug] [35m[Chromedriver][39m Changed state to 'online'
+[35m[Appium][39m New AndroidDriver session created successfully, session abcdead6-413b-4f67-92fd-ec04cfc10d3c added to master session list
+[debug] [35m[BaseDriver][39m Event 'newSessionStarted' logged at 1551855507937 (14:58:27 GMT+0800 (GMT+08:00))
+[debug] [35m[MJSONWP][39m Responding to client with driver.createSession() result: {"platform":"ANDROID","webStorageEnabled":false,"takesScreenshot":true,"javascriptEnabled":true,"databaseEnabled":false,"networkConnectionEnabled":true,"locationContextEnabled":false,"warnings":{},"desired":{"browserName":"Chrome","deviceName":"htc Nexus 9 (Android 7.1.1)","newCommandTimeout":1800,"platform":"ANDROID","platformName":"Android","udid":"HT524JT00708"},"browserName":"Chrome","deviceName":"HT524JT00708","newCommandTimeout":1800,"platformName":"Android","udid":"HT524JT00708","deviceUDID":"HT524JT00708","platformVersion":"7.1.1","deviceScreenSize":"1536x2048","deviceModel":"Nexus 9","deviceManufacturer":"htc"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session [39m[32m200[39m [90m91010 ms - 699[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mGET[39m [37m/wd/hub/status[39m
+[35m[HTTP][39m [90m{}[39m
+[debug] [35m[W3C][39m Calling AppiumDriver.getStatus() with args: []
+[debug] [35m[W3C][39m Responding to client with driver.getStatus() result: {"build":{"version":"1.8.1","revision":null}}
+[35m[HTTP][39m [37m<-- GET /wd/hub/status [39m[32m200[39m [90m6 ms - 55[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/timeouts[39m
+[35m[HTTP][39m [90m{"type":"implicit","ms":30000}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/timeouts] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/timeouts] with body: {"type":"implicit","ms":30000}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":null}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/timeouts [39m[32m200[39m [90m9 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/timeouts[39m
+[35m[HTTP][39m [90m{"type":"implicit","ms":0}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/timeouts] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/timeouts] with body: {"type":"implicit","ms":0}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":null}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/timeouts [39m[32m200[39m [90m4 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/execute[39m
+[35m[HTTP][39m [90m{"script":"return navigator.sayswho= (function() { var ua= navigator.userAgent, tem, M= ua.match(/(opera|chrome|safari|firefox|msie|trident)\\/?\\s*(\\.?\\d+(\\.\\d+)*)/i) || []; if (/trident/i.test(M[1])) {     tem=  /\\brv[ :]+(\\d+)/g.exec(ua) || [];     return 'IE '+(tem[1] || ''); } if(M[1]=== 'Chrome') {     tem= ua.match(/\\b(OPR|Edge)\\/(\\d+)/);     if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera'); } M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?']; if((tem= ua.match(/version\\/(\\d+)/i))!= null) M.splice(1, 1, tem[1]); return M.join(' ').replace('MSIE', 'IE');})();","args":[]}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/execute] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/execute] with body: {"script":"return navigator.sayswho= (function() { var ua= navigator.userAgent, tem, M= ua.match(/(opera|chrome|safari|firefox|msie|trident)\\/?\\s*(\\.?\\d+(\\.\\d+)*)/i) || []; if (/trident/i.test(M[1])) {     tem=  /\\brv[ :]+(\\d+)/g.exec(ua) || [];     return 'IE '+(tem[1] || ''); } if(M[1]=== 'Chrome') {     tem= ua.match(/\\b(OPR|Edge)\\/(\\d+)/);     if(tem!= null) return tem.slice(1).join(' ').replace('OPR', 'Opera'); } M= M[2]? [M[1], M[2]]: [navigator.appName, navigator.appVersion, '-?']; if((tem= ua.match(/version\\/(\\d+)/i))!= null) M.splice(1, 1, tem[1]); return M.join(' ').replace('MSIE', 'IE');})();","args":[]}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":"Chrome 70.0.3538.80"}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/execute [39m[32m200[39m [90m904 ms - 93[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/url[39m
+[35m[HTTP][39m [90m{"url":"https://www.tg9demo.com/#/home"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/url] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/url] with body: {"url":"https://www.tg9demo.com/#/home"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":null}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/url [39m[32m200[39m [90m44754 ms - 76[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m259 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m178 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m200 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m222 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m88 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m131 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m113 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m70 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m158 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m569 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m53 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m199 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m214 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m116 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m145 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m99 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m195 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m203 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m214 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m180 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m186 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m763 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m1075 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m188 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m155 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m230 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m111 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m177 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m114 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m129 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m78 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m123 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m271 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m140 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m82 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m94 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m129 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m89 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m130 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m99 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m124 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m92 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m169 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m94 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m140 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m94 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m77 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m108 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m81 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m114 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m133 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m263 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m117 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m80 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m123 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m150 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m200[39m [90m90 ms - 74[39m
+[35m[HTTP][39m [90m[39m
+[35m[HTTP][39m [37m-->[39m [37mPOST[39m [37m/wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements[39m
+[35m[HTTP][39m [90m{"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}[39m
+[35m[W3C][39m Driver proxy active, passing request on via HTTP proxy
+[debug] [35m[JSONWP Proxy][39m Proxying [POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements] to [POST http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d/elements] with body: {"using":"xpath","value":"(.//*[normalize-space(text()) and normalize-space(.)='系统公告'])[1]/following::i[1]"}
+[35m[HTTP][39m [37m<-- POST /wd/hub/session/abcdead6-413b-4f67-92fd-ec04cfc10d3c/elements [39m[32m-[39m [90m- ms - -[39m
+[35m[HTTP][39m [90m[39m
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: {"sessionId":"ba98106c6fed1c75eb000e71a943fa3d","status":0,"value":[]}
+[35m[JSONWP Proxy][39m Replacing sessionId ba98106c6fed1c75eb000e71a943fa3d with abcdead6-413b-4f67-92fd-ec04cfc10d3c
+[debug] [35m[AndroidBootstrap][39m Emitting alert message...
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Emitting system alert message
+[35m[BaseDriver][39m Shutting down because we waited 1800 seconds for a command
+[debug] [35m[AndroidDriver][39m Shutting down Android driver
+[debug] [35m[AndroidDriver][39m Stopping chromedriver for context CHROMIUM
+[debug] [35m[Chromedriver][39m Changed state to 'stopping'
+[debug] [35m[JSONWP Proxy][39m Proxying [DELETE /] to [DELETE http://127.0.0.1:65073/wd/hub/session/ba98106c6fed1c75eb000e71a943fa3d] with no body
+[35m[Appium][39m Closing session, cause was 'New Command Timeout of 1800 seconds expired. Try customizing the timeout using the 'newCommandTimeout' desired capability'
+[35m[Appium][39m Removing session abcdead6-413b-4f67-92fd-ec04cfc10d3c from our master session list
+[debug] [35m[JSONWP Proxy][39m Got response with status 200: "{\"sessionId\":\"ba98106c6fed1c75eb000e71a943fa3d\",\"status\":0,\"value\":null}"
+[debug] [35m[Chromedriver][39m Changed state to 'stopped'
+[debug] [35m[ADB][39m Pressing the HOME button
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell input keyevent 3'
+[debug] [35m[AndroidBootstrap][39m Sending command to android: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got data from client: {"cmd":"shutdown"}
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Got command of type SHUTDOWN
+[debug] [35m[AndroidBootstrap][39m [BOOTSTRAP LOG] [debug] Returning result: {"status":0,"value":"OK, shutting down"}
+[debug] [35m[AndroidBootstrap][39m Received command result from bootstrap
+[debug] [35m[UiAutomator][39m Shutting down UiAutomator
+[debug] [35m[UiAutomator][39m Moving to state 'stopping'
+[debug] [35m[UiAutomator][39m UiAutomator shut down normally
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[ADB][39m Attempting to kill all uiautomator processes
+[debug] [35m[ADB][39m Getting all processes with uiautomator
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell ps'
+[35m[ADB][39m No uiautomator process found to kill, continuing...
+[debug] [35m[UiAutomator][39m Moving to state 'stopped'
+[debug] [35m[Logcat][39m Stopping logcat capture
+[debug] [35m[ADB][39m Running 'C:\Users\jacka\.katalon\tools\android_sdk\platform-tools\adb.exe -P 5037 -s HT524JT00708 shell am force-stop io.appium.unlock'
+[debug] [35m[AndroidDriver][39m Not cleaning generated files. Add `clearSystemFiles` capability if wanted.

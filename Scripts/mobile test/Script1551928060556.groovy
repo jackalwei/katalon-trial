@@ -13,29 +13,9 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('https://www.tg9demo.com/#/home')
-
-WebUI.click(findTestObject('Page_TG/pop_up_dialog_delete'))
-
-WebUI.maximizeWindow()
-
-WebUI.waitForElementVisible(findTestObject('Page_TG/input_login_password'), 0)
-
-WebUI.setText(findTestObject('Page_TG/input_login_username'), 'Test 1234')
-
-WebUI.setText(findTestObject('Page_TG/input_login_password'), 'Password 5678')
-
-WebUI.click(findTestObject('Page_TG/login_btn'))
-
-WebUI.waitForElementPresent(findTestObject('Page_TG/p_'), 10)
-
-WebUI.delay(5)
-
-WebUI.closeBrowser()
-
 Mobile.startApplication('C:\\Users\\jacka\\Desktop\\app-release.apk', true)
 
-Mobile.tap(findTestObject('mobile1/android.widget.TextView6 - '), 0)
+Mobile.tap(findTestObject('mobile1/android.widget.TextView6 -  (1)'), 0)
 
 Mobile.closeApplication()
 

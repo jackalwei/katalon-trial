@@ -1,0 +1,5 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Test suite trial 1,,,2019-03-07 16:01:05,2019-03-07 16:01:07,2.860s,FAILED
+,,,,,,
+Test Cases/Trial 2,,,2019-03-07 16:01:05,2019-03-07 16:01:07,2.599s,FAILED
+"openBrowser("""")",,,2019-03-07 16:01:05,2019-03-07 16:01:07,2.249s,FAILED

@@ -1,0 +1,6 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Test suite trial 1,Chrome 71.0.3578.99,,2019-03-07 15:48:42,2019-03-07 15:50:45,2m - 3.373s,FAILED
+,,,,,,
+Test Cases/Trial1,Chrome 71.0.3578.99,,2019-03-07 15:48:42,2019-03-07 15:50:42,1m - 59.898s,FAILED
+"openBrowser(""https://www.tg9demo.com/#/home"")",Chrome 71.0.3578.99,,2019-03-07 15:48:43,2019-03-07 15:50:03,1m - 20.708s,PASSED
+"click(findTestObject(""Page_TG/pop_up_dialog_delete""))",Chrome 71.0.3578.99,,2019-03-07 15:50:03,2019-03-07 15:50:42,38.830s,FAILED

@@ -13,29 +13,23 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('https://www.tg9demo.com/#/home')
+WebUI.openBrowser('')
 
-WebUI.click(findTestObject('Page_TG/pop_up_dialog_delete'))
+WebUI.navigateToUrl('https://katalon-demo-cura.herokuapp.com/')
 
-WebUI.maximizeWindow()
+//WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/a_CURA Healthcare_menu-toggle'))
 
-WebUI.waitForElementVisible(findTestObject('Page_TG/input_login_password'), 0)
+//WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/a_Home'))
 
-WebUI.setText(findTestObject('Page_TG/input_login_username'), 'Test 1234')
+WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/a_Make Appointment'))
 
-WebUI.setText(findTestObject('Page_TG/input_login_password'), 'Password 5678')
+WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Username_username'), 'john doe')
 
-WebUI.click(findTestObject('Page_TG/login_btn'))
+WebUI.setEncryptedText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Password_password'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
 
-WebUI.waitForElementPresent(findTestObject('Page_TG/p_'), 10)
+WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/button_Login'))
 
-WebUI.delay(5)
+WebUI.verifyTextPresent('Login failed! Please ensure the username and password are valid.', false)
 
 WebUI.closeBrowser()
-
-Mobile.startApplication('C:\\Users\\jacka\\Desktop\\app-release.apk', true)
-
-Mobile.tap(findTestObject('mobile1/android.widget.TextView6 - '), 0)
-
-Mobile.closeApplication()
 

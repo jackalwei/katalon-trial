@@ -1,0 +1,4 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Test suite trial 1,,,2019-03-07 19:15:54,2019-03-07 19:15:55,0.690s,ERROR
+,,,,,,
+Test Cases/Trial 2,,,2019-03-07 19:15:54,2019-03-07 19:15:55,0.364s,ERROR
